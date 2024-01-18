@@ -6,9 +6,20 @@ public enum SnacksDto {
     private final int levelOfDeliciousness;
     private final int levelOfHealthiness;
 
+    private final int MIN_BALANCE_OF_HEALTH = 7;
+    private final int MIN_BALANCE_OF_HAPPINESS = 6;
+
     SnacksDto(final int levelOfDeliciousness, final int levelOfHealthiness) {
         this.levelOfDeliciousness = levelOfDeliciousness;
         this.levelOfHealthiness = levelOfHealthiness;
+    }
+
+    public int getMIN_BALANCE_OF_HEALTH() {
+        return MIN_BALANCE_OF_HEALTH;
+    }
+
+    public int getMIN_BALANCE_OF_HAPPINESS() {
+        return MIN_BALANCE_OF_HAPPINESS;
     }
 
     public int getLevelOfDeliciousness() {

@@ -3,10 +3,10 @@ package com.example.demo.dto;
 public class FeedScheduleDto {
     private boolean morningFeed;
     private boolean eveningFeed;
-    private final int MIN_BALANCE_OF_HEALTH = 7;
-    private final int MIN_BALANCE_OF_HAPPINESS = 6;
+
     private String alert;
 
+    //local time
     public FeedScheduleDto(final boolean morningFeed, final boolean eveningFeed, final String alert) {
         this.morningFeed = morningFeed;
         this.eveningFeed = eveningFeed;
@@ -29,13 +29,6 @@ public class FeedScheduleDto {
         this.eveningFeed = eveningFeed;
     }
 
-    public int getMIN_BALANCE_OF_HEALTH() {
-        return MIN_BALANCE_OF_HEALTH;
-    }
-
-    public int getMIN_BALANCE_OF_HAPPINESS() {
-        return MIN_BALANCE_OF_HAPPINESS;
-    }
 
     public String getAlert() {
         return alert;
@@ -50,8 +43,6 @@ public class FeedScheduleDto {
         return "FeedScheduleDto{" +
                 "morningFeed=" + morningFeed +
                 ", eveningFeed=" + eveningFeed +
-                ", MIN_BALANCE_OF_HEALTH=" + MIN_BALANCE_OF_HEALTH +
-                ", MIN_BALANCE_OF_FUN=" + MIN_BALANCE_OF_HAPPINESS +
                 ", alert='" + alert + '\'' +
                 '}';
     }
