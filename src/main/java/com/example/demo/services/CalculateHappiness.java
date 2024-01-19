@@ -1,12 +1,11 @@
 package com.example.demo.services;
 
 
-
-
 public class CalculateHappiness {
 
-//    public int calculateHappiness(){
-//
-//               return ;
+    public double caltulate(int firstChoice, int secondChoice) {
+
+        return (firstChoice + secondChoice) / 2.0;
     }
+}
 
